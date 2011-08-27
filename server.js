@@ -11,3 +11,11 @@ var server = Http.createServer(Stack(
   Creationix.indexer("/", __dirname + "/www")
 )).listen(PORT);
 console.log("Server Minimason listening on http://localhost:" + PORT + "/");
+
+if (process.getuid() === 0) {
+  require('fs').stat(__filename, function(err, stats) {
+    if (err) return console.log(err)
+    console.log("Dropping uid to " + stats.uid);
+    process.setuid(stats.uid);
+  });
+}
