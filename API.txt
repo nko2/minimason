@@ -89,7 +89,6 @@ User connects to /game/index.htm?gameId=TehAw3zoMEz&map=JawsOfDeath, which
 //////////////////////////////////////////////////
 
 TODO:
-- browser platform
 - PNG for multi-frame sprite animation (actual artwork), JS file that maps into it.
 - implement graphics engine in WebGL
 - SDL platform
