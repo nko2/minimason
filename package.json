@@ -1,0 +1,19 @@
+{
+  "author": "Tim Caswell <tim@creationix.com> (http://creationix.com/)",
+  "name": "minimason",
+  "description": "Minimason entry for NKO2",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nko2/minimason.git"
+  },
+  "engines": {
+    "node": ">=v0.4.4"
+  },
+  "dependencies": {
+    "stack": ">=0.0.3",
+    "creationix": ">=0.1.5",
+    "nko": ">=v0.1.0"
+  },
+  "devDependencies": {}
+}
