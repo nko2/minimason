@@ -8,5 +8,7 @@ mkdir -p webos/res
 cp -r www/game/res/* webos/res/
 palm-package webos
 palm-install com.creationix.minimason_0.0.0_all.ipk
+mkdir -p ipkgs
+mv com.creationix.minimason_0.0.0_all.ipk www/ipkgs/
 palm-launch com.creationix.minimason
 echo "Done.."
