@@ -6,7 +6,7 @@ var Http = require('http'),
 var PORT = process.env.PORT || 8080;
 var server = Http.createServer(Stack(
   Creationix.log(),
-  Creationix.autoloader("/scripts.js", __dirname + "/lib", false),
+  Creationix.autoloader("/game/scripts.js", __dirname + "/lib", false),
   Creationix.static("/", __dirname + "/www", "index.html")
 )).listen(PORT);
 console.log("Server Minimason listening on http://localhost:" + PORT + "/");
