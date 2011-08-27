@@ -64,12 +64,13 @@ WebSite Map
 
 
 
-/ Intro with art, ipk download, and link to launch browser version
+/ Intro with art, link to ipk download, and link to launch browser version
 /game/
+/game/scripts?game - all the js pre-compiled by the server
 /game/style.css
-/game/img/foo.png
+/game/res/foo.png
   ...
-/releases/com.creationix.minimason_0.0.1_armv7.ipk
+/ipkgs/com.creationix.minimason_0.0.1_armv7.ipk
 
 
 ////////////////////////////////////////////////
@@ -96,7 +97,7 @@ TODO:
   - wrap functions for Node WebGL
 - Makefile to generate IPKs
 - landing page on webpage
-- modify Node WebServer to match "WebSite Map" (see above)
+
 - write game
 
 
