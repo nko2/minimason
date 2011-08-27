@@ -1,1 +1,3 @@
 node_modules
+webos/res
+*.ipk

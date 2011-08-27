@@ -79,7 +79,10 @@
        style="fill:#fcaf3e"
        d="m 128,572.36215 c 0,17.67311 -14.32689,32 -32,32 -17.673112,0 -32,-14.32689 -32,-32 0,-17.67311 14.326888,-32 32,-32 17.67311,0 32,14.32689 32,32 z"
        id="path2994"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/tim/Desktop/minimason/www/game/res/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        id="path2996"
        d="m 448,1020.3622 c 0,17.6731 -14.32689,32 -32,32 -17.67311,0 -32,-14.3269 -32,-32 0,-17.6732 14.32689,-32.0001 32,-32.0001 17.67311,0 32,14.3269 32,32.0001 z"

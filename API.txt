@@ -90,13 +90,14 @@ User connects to /game/index.htm?gameId=TehAw3zoMEz&map=JawsOfDeath, which
 //////////////////////////////////////////////////
 
 TODO:
-- PNG for multi-frame sprite animation (actual artwork), JS file that maps into it.
 - implement graphics engine in WebGL
 - SDL platform
   - wrap functions for Node WebGL
 - Makefile to generate IPKs
+- plan plot and story
+- PNG for multi-frame sprite animation (actual artwork), JS file that maps into it.
 - landing page on webpage
-
+- plan game mechanics and implementation plan
 - write game
 
 

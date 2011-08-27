@@ -1,0 +1,10 @@
+{
+  "id": "com.creationix.minimason",
+  "title": "A Well Rounded Adventure",
+  "version": "0.0.0",
+  "vendor": "Tim Caswell",
+  "type": "pdk",
+  "main": "main.js",
+  "uiRevision": 2,
+  "icon": "res/icon.png"
+}
