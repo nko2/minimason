@@ -1,0 +1,104 @@
+platform:
+
+loadTexture(path, function (err, texture){...})
+setTitle(title)
+setIcon(pathToIcon)
+setSize(w, h)
+gl = gl context
+
+Game:
+
+setTransform({x:?,y:?,w:?,h:?,a:?})  Set's world camera
+loadSpriteMap(data, function (err, makeSprite){..})
+ - makeSprite is a sprite factory "makeSprite(name)"
+
+Sprite(texture, coords)
+ - draw({x:?,y:?,w:?,h:?,a:?}, )
+
+
+/////////////////////////
+
+
+loadSpriteMap(require('sprites'), function (err, makeSprite) {
+  if (err) throw err;
+  
+  
+  var ship1 = makeSprite('ship');
+  
+  ship1.draw({...})
+  
+  
+});
+
+////////////////////////////////
+
+60hz loop
+all sprites initially have state 0
+
+screen + 50% padding get .tick(delta) called on them, sprite moves with physics, no collisions, on first call
+  , mark state as 1
+same set of sprites call .check(sprites), collision detection, sprite updates it's own bounding box, return true if box changed, we update it's grid entries
+  mark state as 2, or 3 if you want to delete it
+loop again on list and call splice out of grid if state = DEAD (3)
+screen get .render() called on them
+  mark state as 0
+
+
+classes of sprites
+
+time based keyframe movement - requires common known algo and synced clocks
+
+fixed objects, simple, never move
+
+players, only the player moves itself, it tells other clients about it's movements
+
+npc, bullets, treasures, master server owns and tells everyone
+
+player moves a part of the world, it tells others about the movement
+
+
+////////////////////////////////////////////
+
+
+WebSite Map
+
+
+
+/ Intro with art, ipk download, and link to launch browser version
+/game/
+/game/style.css
+/game/img/foo.png
+  ...
+/releases/com.creationix.minimason_0.0.1_armv7.ipk
+
+
+////////////////////////////////////////////////
+
+Bootstrapping Game
+
+User connects to /game/index.htm?gameId=TehAw3zoMEz&map=JawsOfDeath, which
+1) establishes a persistent, bidirectional connection to the server
+   - websocket for browser
+   - tcp for node/SDL client
+2) if game with that ID is already running, join it (ignore if map doesn't match).  Otherwise, create it.
+3) Get copy of level from server
+4) Sync world clock with server (use server timestamp + latency correction)
+5) Start 
+
+
+//////////////////////////////////////////////////
+
+TODO:
+- browser platform
+- PNG for multi-frame sprite animation (actual artwork), JS file that maps into it.
+- implement graphics engine in WebGL
+- SDL platform
+  - wrap functions for Node WebGL
+- Makefile to generate IPKs
+- landing page on webpage
+- modify Node WebServer to match "WebSite Map" (see above)
+- write game
+
+
+
+
