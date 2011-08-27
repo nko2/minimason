@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('game2');
+require('game3');
