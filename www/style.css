@@ -1,4 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+
 body {
-  background-color: black;
-  color: white;
+  background: #eee;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
 }
+h1, h2, button {
+  font-family: "Yanone Kaffeesatz", Impact;
+}
+h1 {
+  font-size: 100pt;
+  margin: 0;
+}
+h2 {
+  font-size:70pt;
+}
+p {
+  font-family: "sans serif", "ubuntubeta mono", monaco, monospace;
+  font-size: 30px;
+}
+.vote {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+button {
+  font-size: 50pt;
+}
+#preview {
+  width: 800px;
+  height: 800px;
+  border-radius: 30px;
+  border: 10px solid #000;
+  background-color: #333;
+  color: #332;
+}
+
