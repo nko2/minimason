@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "vendor": "Tim Caswell",
   "type": "pdk",
-  "main": "main.js",
+  "main": "main",
   "uiRevision": 2,
   "icon": "res/icon.png"
 }
